@@ -29,4 +29,5 @@ FE [np.array([0.1, 0.2, 0.0]), np.array([0.3, 0.1, 0.0]), ...] (a list of contro
 
 
 ## Results with real data 
-<img width="1201" alt="Снимок экрана 2024-12-17 в 00 33 40" src="https://github.com/user-attachments/assets/bee40fca-da35-484a-9296-83ed19a06389" />
+<img width="872" alt="image" src="https://github.com/user-attachments/assets/2fe1c1c9-fbf0-4b0e-824a-d92ba1b5815a" />
+<img width="872" alt="Снимок экрана 2024-12-17 в 00 33 40" src="https://github.com/user-attachments/assets/bee40fca-da35-484a-9296-83ed19a06389" />
