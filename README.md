@@ -14,8 +14,15 @@ The key components of the system include:
 - **Occupancy Grid Map**: A 3D grid representing the environment, where each cell indicates the presence or absence of obstacles.
 - **Sensor Model**: A probabilistic model that updates particle weights based on simulated sensor measurements.
 - **Motion Model**: A model that predicts the quadcopter's movement based on control inputs and adds noise to simulate real-world conditions.
-- 
 ## SLAM algorithm 
+
+The slam function is the core of the SLAM (Simultaneous Localization and Mapping) algorithm. It integrates all the components of the particle filter-based SLAM system, including particle initialization, motion modeling, sensor modeling, resampling, map updates, and visualization. The function simulates the quadcopter's navigation through a 3D labyrinth environment, estimating its trajectory and building a 3D occupancy grid map.
+
+The slam function takes the following parameters:
+
+- **num_iterations (int)**: The number of iterations (time steps) to run the SLAM algorithm. FE 20 (run the algorithm for 20 time steps).
+- **control_inputs** (list of numpy arrays): A list of control inputs for each iteration. Each control input is a 3D vector representing the movement in the X, Y, and Z directions.
+FE [np.array([0.1, 0.2, 0.0]), np.array([0.3, 0.1, 0.0]), ...] (a list of control inputs for each iteration).
 
 ## Results with somulated data
 <img width="874" alt="image" src="https://github.com/user-attachments/assets/a9cf73ab-e22c-45e7-8c04-69df4f597606" />
